@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="lv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SK Events | Kontakti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=87" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo" aria-label="SK Events home">
+          <span class="logo-mark">SK</span>
+          <span class="logo-word">EVENTS</span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Sākums</a>
+          <a href="services.html">Pakalpojumi</a>
+          <a href="noma.html">Noma</a>
+          <a href="pricing.html">Cenrādis</a>
+          <a href="about.html">Par mums</a>
+          <a href="gallery.html">Galerija</a>
+          <a href="contact.html" aria-current="page">Kontakti</a>
+        </nav>
+        <div class="header-tools">
+          <div class="lang-switch">
+            <span class="active">LAT</span>
+            <span>|</span>
+            <a href="contact-en.html">EN</a>
+          </div>
+          <a class="btn" href="#pieteikt-pasakumu">Pieteikt pasākumu →</a>
+          <button class="mobile-menu-toggle" type="button" aria-label="Open menu">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section contact-wow-section" id="pieteikt-pasakumu" data-contact-wow>
+        <div class="container contact-wow-shell">
+          <div class="contact-wow-head" data-contact-reveal>
+            <div class="eyebrow">Sazinies ar mums</div>
+            <h2 class="contact-wow-title">Ir ideja? <span>Pārvērtīsim to pasākumā.</span></h2>
+            <p>Pastāsti mums, ko plāno. Mēs palīdzēsim ar tehnisko risinājumu, atmosfēru un detaļām, kas padara pasākumu īpašu.</p>
+          </div>
+
+          <div class="contact-wow-grid">
+            <aside class="contact-side-panel" data-contact-reveal>
+              <div class="company-offer-card">
+                <div class="eyebrow">Uzņēmumiem</div>
+                <h3>PLĀNOJAT UZŅĒMUMA PASĀKUMU?</h3>
+                <p>Uzņēmumiem piedāvājam individuālus tehniskos risinājumus un īpašus sadarbības nosacījumus.</p>
+                <ul>
+                  <li>Bezmaksas sākotnējā konsultācija</li>
+                  <li>Individuāls tehniskais risinājums</li>
+                  <li>Skaņa, gaismas, ekrāni, DJ, foto un video vienuviet</li>
+                  <li>Īpaši nosacījumi regulārai sadarbībai</li>
+                </ul>
+                <button class="btn contact-company-btn" type="button" data-contact-company-button>SAŅEMT UZŅĒMUMA PIEDĀVĀJUMU →</button>
+              </div>
+
+              <div class="contact-direct-card">
+                <div class="eyebrow">Tiešais kontakts</div>
+                <div class="contact-list">
+                  <div class="contact-item">
+                    <div class="icon">✉</div>
+                    <div>
+                      <strong>E-pasts</strong>
+                      <a href="mailto:info@skevents.eu">info@skevents.eu</a>
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <div class="icon">☎</div>
+                    <div>
+                      <strong>Pasākumi un rezervācijas</strong>
+                      <a href="tel:+37126252236">+371 26252236</a>
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <div class="icon">▣</div>
+                    <div>
+                      <strong>Tehniskais atbalsts</strong>
+                      <a href="tel:+37123118454">+371 23118454</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </aside>
+
+            <div class="contact-form-panel" data-contact-reveal>
+              <form data-contact-form>
+                <div class="contact-service-picker" data-contact-reveal>
+                  <div>
+                    <span class="contact-form-kicker">Piedāvājuma forma</span>
+                    <h3>Kādi pakalpojumi jūs interesē?</h3>
+                  </div>
+                  <div class="contact-service-grid">
+                    <label class="contact-service-card">
+                      <input type="checkbox" name="services" value="DJ" data-contact-service />
+                      <span>DJ</span>
+                    </label>
+                    <label class="contact-service-card">
+                      <input type="checkbox" name="services" value="Foto" data-contact-service />
+                      <span>Foto</span>
+                    </label>
+                    <label class="contact-service-card">
+                      <input type="checkbox" name="services" value="Video" data-contact-service />
+                      <span>Video</span>
+                    </label>
+                    <label class="contact-service-card">
+                      <input type="checkbox" name="services" value="Skaņa / gaisma / tehniskais nodrošinājums" data-contact-service />
+                      <span>Skaņa / gaisma / tehniskais nodrošinājums</span>
+                    </label>
+                  </div>
+                  <input type="hidden" name="selected-services" data-contact-services-input />
+                </div>
+
+                <div class="form-grid contact-field-grid">
+                  <div class="field" data-contact-reveal>
+                    <label>Vārds *</label>
+                    <input type="text" name="name" autocomplete="name" required />
+                  </div>
+                  <div class="field" data-contact-reveal>
+                    <label>E-pasts *</label>
+                    <input type="email" name="email" autocomplete="email" required />
+                  </div>
+                  <div class="field" data-contact-reveal>
+                    <label>Tālrunis</label>
+                    <input type="tel" name="phone" autocomplete="tel" />
+                  </div>
+                  <div class="field" data-contact-reveal>
+                    <label>Pasākuma datums</label>
+                    <input type="date" name="event-date" />
+                  </div>
+                  <div class="field" data-contact-reveal>
+                    <label>Pasākuma vieta</label>
+                    <input type="text" name="event-location" placeholder="Pilsēta / pasākuma norises vieta" />
+                  </div>
+                  <div class="field" data-contact-reveal>
+                    <label>Viesu skaits</label>
+                    <input type="text" name="guest-count" placeholder="Piemēram, 80 viesi" />
+                  </div>
+                  <div class="field full" data-contact-reveal>
+                    <label>Papildu informācija</label>
+                    <textarea name="message" placeholder="Pastāstiet par pasākuma ideju, norises vietu, atmosfēru vai īpašām vēlmēm."></textarea>
+                  </div>
+                </div>
+
+                <div class="contact-submit-row" data-contact-reveal>
+                  <button class="btn contact-submit-btn" type="submit">SAŅEMT PIEDĀVĀJUMU <span aria-hidden="true">→</span></button>
+                  <p>Jo precīzāku informāciju norādīsiet, jo ātrāk varēsim sagatavot piemērotu risinājumu.</p>
+                </div>
+              </form>
+
+              <div class="contact-success" data-contact-success hidden>
+                <div class="eyebrow">Paldies</div>
+                <h3>PALDIES!</h3>
+                <p>Jūsu pasākums jau ir soli tuvāk realizācijai.</p>
+                <p>SK EVENTS komanda drīzumā ar Jums sazināsies.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section latvia-map-section" data-latvia-map>
+        <div class="container">
+          <div class="latvia-map-card">
+            <div class="latvia-map-copy" data-map-reveal>
+              <div class="eyebrow">Visā Latvijā</div>
+              <h2>SK EVENTS nodrošina pasākumus visā Latvijā.</h2>
+              <p>No Rīgas līdz Liepājai, no Valmieras līdz Daugavpilij — pielāgojam skaņu, gaismas, DJ, foto, video un tehniskos risinājumus konkrētai vietai un pasākuma mērogam.</p>
+            </div>
+
+            <div class="latvia-map-shell" data-map-reveal>
+              <svg class="latvia-map-svg" viewBox="0 0 760 440" role="img" aria-labelledby="latvia-map-title latvia-map-desc">
+                <title id="latvia-map-title">Interaktīva Latvijas karte ar SK EVENTS galvenajām pilsētām</title>
+                <desc id="latvia-map-desc">Kartē izceltas Rīga, Jūrmala, Jelgava, Liepāja, Ventspils, Valmiera, Rēzekne, Jēkabpils un Daugavpils.</desc>
+                <defs>
+                  <filter id="latvia-map-shadow" x="-18%" y="-18%" width="136%" height="136%">
+                    <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#11100e" flood-opacity="0.12" />
+                  </filter>
+                  <filter id="latvia-gold-glow" x="-80%" y="-80%" width="260%" height="260%">
+                    <feGaussianBlur stdDeviation="4" result="blur" />
+                    <feMerge>
+                      <feMergeNode in="blur" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                  </filter>
+                  <radialGradient id="latvia-land-light" cx="45%" cy="32%" r="74%">
+                    <stop offset="0%" stop-color="#fffdf8" />
+                    <stop offset="58%" stop-color="#f8f3e8" />
+                    <stop offset="100%" stop-color="#efe6d4" />
+                  </radialGradient>
+                  <linearGradient id="latvia-gold-stroke" x1="18%" y1="0%" x2="82%" y2="100%">
+                    <stop offset="0%" stop-color="#d4a63a" />
+                    <stop offset="48%" stop-color="#c99224" />
+                    <stop offset="100%" stop-color="#b57c16" />
+                  </linearGradient>
+                </defs>
+
+                <path class="latvia-land-shadow" d="M 742.9 342.6 L 636.9 411.0 L 576.8 440.9 L 482.0 354.8 L 429.4 343.4 L 415.6 306.5 L 318.6 324.0 L 153.1 312.6 L 40.1 367.1 L 43.5 233.5 L 92.0 122.1 L 185.0 61.5 L 263.4 194.1 L 342.6 190.6 L 361.5 54.4 L 445.6 23.0 L 488.8 44.8 L 573.8 110.6 L 655.2 111.0 L 702.8 151.8 L 711.2 237.9 L 742.9 342.6 Z" />
+                <path class="latvia-land" fill="url(#latvia-land-light)" stroke="url(#latvia-gold-stroke)" filter="url(#latvia-map-shadow)" d="M 742.9 342.6 L 636.9 411.0 L 576.8 440.9 L 482.0 354.8 L 429.4 343.4 L 415.6 306.5 L 318.6 324.0 L 153.1 312.6 L 40.1 367.1 L 43.5 233.5 L 92.0 122.1 L 185.0 61.5 L 263.4 194.1 L 342.6 190.6 L 361.5 54.4 L 445.6 23.0 L 488.8 44.8 L 573.8 110.6 L 655.2 111.0 L 702.8 151.8 L 711.2 237.9 L 742.9 342.6 Z" />
+
+                <path id="latvia-route-path" class="latvia-route-base" pathLength="1000" d="M341 204 C329 200 317 199 308 201 C306 221 306 241 303 257 C236 271 130 294 58 283 C66 214 78 166 94 128 C184 94 345 80 471 100 C552 136 617 201 660 282 C640 329 609 368 581 395 C557 356 535 315 514 284 C464 262 395 235 341 204" />
+                <path class="latvia-route-trail" filter="url(#latvia-gold-glow)" pathLength="1000" d="M341 204 C329 200 317 199 308 201 C306 221 306 241 303 257 C236 271 130 294 58 283 C66 214 78 166 94 128 C184 94 345 80 471 100 C552 136 617 201 660 282 C640 329 609 368 581 395 C557 356 535 315 514 284 C464 262 395 235 341 204" />
+                <path class="latvia-live-trail" data-map-live-trail d="" />
+
+                <g class="latvia-city city-riga" data-map-city="riga" tabindex="0" aria-label="Rīga">
+                  <circle class="city-hit" cx="341" cy="204" r="28" />
+                  <circle class="city-halo" cx="341" cy="204" r="17" />
+                  <circle class="city-dot city-dot-main" cx="341" cy="204" r="7" />
+                  <text class="city-label city-label-main" x="357" y="195">Rīga</text>
+                </g>
+                <g class="latvia-city" data-map-city="jurmala" tabindex="0" aria-label="Jūrmala">
+                  <circle class="city-hit" cx="308" cy="201" r="24" />
+                  <circle class="city-halo" cx="308" cy="201" r="13" />
+                  <circle class="city-dot" cx="308" cy="201" r="5" />
+                  <text class="city-label" x="226" y="204">Jūrmala</text>
+                </g>
+                <g class="latvia-city" data-map-city="jelgava" tabindex="0" aria-label="Jelgava">
+                  <circle class="city-hit" cx="303" cy="257" r="24" />
+                  <circle class="city-halo" cx="303" cy="257" r="13" />
+                  <circle class="city-dot" cx="303" cy="257" r="5" />
+                  <text class="city-label" x="236" y="265">Jelgava</text>
+                </g>
+                <g class="latvia-city" data-map-city="liepaja" tabindex="0" aria-label="Liepāja">
+                  <circle class="city-hit" cx="58" cy="283" r="24" />
+                  <circle class="city-halo" cx="58" cy="283" r="13" />
+                  <circle class="city-dot" cx="58" cy="283" r="5" />
+                  <text class="city-label" x="78" y="294">Liepāja</text>
+                </g>
+                <g class="latvia-city" data-map-city="ventspils" tabindex="0" aria-label="Ventspils">
+                  <circle class="city-hit" cx="94" cy="128" r="24" />
+                  <circle class="city-halo" cx="94" cy="128" r="13" />
+                  <circle class="city-dot" cx="94" cy="128" r="5" />
+                  <text class="city-label" x="112" y="120">Ventspils</text>
+                </g>
+                <g class="latvia-city" data-map-city="valmiera" tabindex="0" aria-label="Valmiera">
+                  <circle class="city-hit" cx="471" cy="100" r="24" />
+                  <circle class="city-halo" cx="471" cy="100" r="13" />
+                  <circle class="city-dot" cx="471" cy="100" r="5" />
+                  <text class="city-label" x="492" y="96">Valmiera</text>
+                </g>
+                <g class="latvia-city" data-map-city="rezekne" tabindex="0" aria-label="Rēzekne">
+                  <circle class="city-hit" cx="660" cy="282" r="24" />
+                  <circle class="city-halo" cx="660" cy="282" r="13" />
+                  <circle class="city-dot" cx="660" cy="282" r="5" />
+                  <text class="city-label" x="674" y="275">Rēzekne</text>
+                </g>
+                <g class="latvia-city" data-map-city="jekabpils" tabindex="0" aria-label="Jēkabpils">
+                  <circle class="city-hit" cx="514" cy="284" r="24" />
+                  <circle class="city-halo" cx="514" cy="284" r="13" />
+                  <circle class="city-dot" cx="514" cy="284" r="5" />
+                  <text class="city-label" x="430" y="292">Jēkabpils</text>
+                </g>
+                <g class="latvia-city" data-map-city="daugavpils" tabindex="0" aria-label="Daugavpils">
+                  <circle class="city-hit" cx="581" cy="395" r="24" />
+                  <circle class="city-halo" cx="581" cy="395" r="13" />
+                  <circle class="city-dot" cx="581" cy="395" r="5" />
+                  <text class="city-label" x="594" y="405">Daugavpils</text>
+                </g>
+
+                <g class="latvia-moving-orb" filter="url(#latvia-gold-glow)" data-map-orb transform="translate(341 204)" aria-hidden="true">
+                  <circle class="latvia-orb-glow" r="16" />
+                  <circle class="latvia-orb" r="7" />
+                </g>
+              </svg>
+              <div class="latvia-map-note">Rīga → Jūrmala → Jelgava → Liepāja → Ventspils → Valmiera → Rēzekne → Daugavpils → Jēkabpils → Rīga</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="logo" style="margin-bottom: 18px;">
+            <span class="logo-mark">SK</span>
+            <span style="color: var(--white);">EVENTS</span>
+          </div>
+          <p>Pasākumu tehniskais un radošais nodrošinājums.</p>
+        </div>
+        <div>
+          <h4>Ātrās saites</h4>
+          <ul>
+            <li><a href="index.html">Sākums</a></li>
+            <li><a href="services.html">Pakalpojumi</a></li>
+            <li><a href="noma.html">Noma</a></li>
+            <li><a href="pricing.html">Cenrādis</a></li>
+            <li><a href="about.html">Par mums</a></li>
+            <li><a href="gallery.html">Galerija</a></li>
+            <li><a href="contact.html">Kontakti</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Pakalpojumi</h4>
+          <ul>
+            <li>DJ pakalpojumi</li>
+            <li>Foto &amp; Video</li>
+            <li>Pasākumu tehniskais nodrošinājums</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontakti</h4>
+          <ul>
+            <li><a href="mailto:info@skevents.eu">info@skevents.eu</a></li>
+            <li><a href="tel:+37126252236">26252236</a></li>
+            <li><a href="tel:+37123118454">23118454</a></li>
+            <li>Nītaures iela 8–9, Augšlīgatne</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <div>© <span data-year></span> SK Events. Visas tiesības aizsargātas.</div>
+        <a href="privacy.html">Privātuma politika</a>
+      </div>
+    </footer>
+
+    <script src="script.js?v=14"></script>
+  </body>
+</html>
