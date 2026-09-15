@@ -161,6 +161,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (rentalForm) {
     rentalForm.addEventListener('submit', (event) => {
+      const shouldUseNativeSubmit = rentalForm.hasAttribute('action') && rentalForm.getAttribute('action').trim();
+
+      if (shouldUseNativeSubmit) {
+        return;
+      }
+
       event.preventDefault();
 
       if (rentalFeedback) {
