@@ -703,7 +703,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (contactForm) {
       contactForm.addEventListener('submit', (event) => {
-    
+        const shouldUseNativeSubmit = contactForm.hasAttribute('action') && contactForm.getAttribute('action').trim();
+
+        if (shouldUseNativeSubmit) {
+          updateSelectedServices();
+          return;
+        }
+
+        event.preventDefault();
 
         if (contactFormPanel && contactSuccess) {
           contactFormPanel.classList.add('is-sent');

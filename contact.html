@@ -131,6 +131,22 @@
                     <input type="tel" name="phone" autocomplete="tel" />
                   </div>
                   <div class="field" data-contact-reveal>
+                    <label>Pasākuma veids *</label>
+                    <select name="Pasākuma veids" data-contact-event-type required>
+                      <option value="" selected disabled>Izvēlieties pasākuma veidu</option>
+                      <option>Kāzas</option>
+                      <option>Dzimšanas diena / jubileja</option>
+                      <option>Korporatīvais pasākums</option>
+                      <option>Konference / seminārs</option>
+                      <option>Prezentācija</option>
+                      <option>Izstāde</option>
+                      <option>Privāts pasākums</option>
+                      <option>Bērnu pasākums</option>
+                      <option>Koncerts / dzīvā mūzika</option>
+                      <option>Cits</option>
+                    </select>
+                  </div>
+                  <div class="field" data-contact-reveal>
                     <label>Pasākuma datums</label>
                     <input type="date" name="event-date" />
                   </div>
@@ -320,6 +336,6 @@
       </div>
     </footer>
 
-    <script src="script.js?v=14"></script>
+    <script src="script.js?v=15"></script>
   </body>
 </html>
