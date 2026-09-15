@@ -703,7 +703,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (contactForm) {
       contactForm.addEventListener('submit', (event) => {
-        event.preventDefault();
+    
 
         if (contactFormPanel && contactSuccess) {
           contactFormPanel.classList.add('is-sent');
